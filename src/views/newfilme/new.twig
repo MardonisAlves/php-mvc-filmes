@@ -1,0 +1,25 @@
+{% extends 'layout.twig' %}
+{% block title %}New filme{% endblock %}
+
+{% block content%}
+  <div>
+     <form  id="form" enctype="multipart/form-data">
+     <input type="text"name="nomefilme" placeholder="Nome Filme"><br>
+     <input type="date"name="data" placeholder="Data Lançamento"><br>
+     <select name="idautor" placeholder="obrigatorio">
+       <option value="">Nome do Autor</option>
+      {% for autor in autores %}
+           <option value="{{autor.id}}">{{autor.nome}}</option>
+      {% endfor %}
+      </select><br>
+      <select name="idautor" placeholder="obrigatorio">
+       <option value="">Escolha o Genero Filme</option>
+           <option value="Ação">Ação</option>
+      </select><br>
+      <input type="file" name="imgfilme" placeholder="obrigatorio"><br>
+      <textarea cols="60" rows="5" placeholder="Descrição do Filme"></textarea><br>
+      <input type="reset" value="Cancelar"><br>
+      <input type="submit" value="Salvar">
+     </form>
+  </div>
+{% endblock %}

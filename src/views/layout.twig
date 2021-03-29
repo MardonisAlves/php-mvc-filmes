@@ -1,0 +1,79 @@
+<!Doctype html>
+<html>
+    <head>
+        <title>
+            {% block  title%}{% endblock %}
+        </title>
+        <meta name="viewport" content="width=device-width , initial-scale=1 , shrink-to-fit=no">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="assets/style.css">
+       
+    </head>
+  <body>
+
+  <div class="topo-bg">
+  <div class="menu">
+   <nav class="menu-nav">
+        <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">sobre</a></li>
+        <li><a href="#">Contato</a></li>
+      </ul>
+  </nav>
+  
+    <div class="topo">
+      <p>
+        <a href="#"><img src="assets/img/php.png" alt=""></a>
+      </p>
+      <p>
+        <a href="#"><img src="assets/img/github.png" alt=""></a>
+      </p>
+      <p>
+        <a href="#"><img src="assets/img/branch.png" alt=""></a>
+      </p>
+    </div>
+  </div>
+  </div>
+
+  <header id="header" class="menu-bg">
+   
+      <div class="menu-logo">
+        <img src="assets/img/netflix.png" alt="">
+      </div>
+
+      <div class="introducao">
+         <h1>Melhores laçamentos do ano em primeira mão</h1> 
+         <p>Com melhores planos que cabe no seu bolso</p>
+      </div>
+       
+  </header>
+
+  <div class="menu-categoria">
+    
+     <nav class="menu-nav-categoria">
+         <ul>
+          <li><a href="#">Ação</a></li>
+          <li><a href="#">Ficção</a></li>
+          <li><a href="#">Comedia</a></li>
+          <li><a href="#">Ação</a></li>
+          <li><a href="#">Ficção</a></li>
+          <li><a href="#">Comedia</a></li>
+          <li><a href="#">Ação</a></li>
+          <li><a href="#">Ficção</a></li>
+          <li><a href="#">Comedia</a></li>
+        </ul>
+      </nav>
+
+  </div>
+
+  <section class="flex-container">
+  {% block content %} {% endblock %}
+  </section>
+
+
+  <footer class="footer">
+    <p>My footer</p>
+  </footer>
+ </body>
+<html>

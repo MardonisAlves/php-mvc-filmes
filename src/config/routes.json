@@ -1,0 +1,21 @@
+{
+    "":{
+        "controller": "Home",
+        "method": "index"
+    },
+
+   "newfilme":{
+        "controller": "Filme",
+    "method": "newfilme"
+   },
+
+   "newautor":{
+    "controller": "Autor",
+    "method": "newautor"
+    },
+
+    "salvarautor":{
+        "controller": "Autor",
+        "method": "salvar"
+    }
+}

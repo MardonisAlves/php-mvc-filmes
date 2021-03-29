@@ -1,0 +1,21 @@
+{
+    "name": "mardonis/catalogo-filmes",
+    "description": "Projeto MVC sem Framework",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Mardonis Alves Bezerra",
+            "email": "mardonisgp@gmail.com"
+        }
+    ],
+    "require": {
+        "twig/twig": "^3.0"
+    }
+    ,
+
+    "autoload": {
+        "psr-4": {
+            "CatalogoFilmes\\" : "src"
+        }
+    }
+}
