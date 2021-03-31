@@ -126,7 +126,7 @@ img {
 	flex-wrap: wrap;
 	background-color: #2C3E50;
 	margin: 0 auto;
-	padding: 20px;
+	
 	border-bottom: 4px solid #fff;
 
 }
@@ -142,7 +142,7 @@ img {
 
 
 .menu-nav-categoria ul li{
-	display: inline;
+	display: inline-flex;
 	padding: 10px;
 }
 
@@ -205,16 +205,18 @@ img {
 @media(max-width:  500px){
 
 	/*menu-nav*/
+	.menu {
+		
+		justify-content: space-between;
+	}
 	.menu-nav ul li {
 		border: 0px solid #fff;
-		display:block;
-		padding: 10px;
+		display:inline-flex;
+		
 
 	}
 
 	.menu-nav ul  {
-		
-		display:block;
 		align-self: center;
 		flex: 1;
 	}
@@ -226,7 +228,7 @@ img {
 		border: 0px solid #fff;
 		text-align: center;
 		justify-content: center;
-		flex: 1 ;
+		flex: 1 1 100%;
 		
 	}
 
@@ -238,23 +240,22 @@ img {
 
 	/*topo*/
 	.topo p a img {
-		padding-top: 10px;
-		width: 16px;
-		height: 16px;
+		
+		padding: 20px;
 	}
 
 	.topo{
+		justify-content: center;
+		flex: 1 1 100%;
 		border: 0px solid red;
-		flex: 1 ;
+		
 	}
 
 	/*menu-categoria*/
-	.menu-nav-categoria ul li{
-	display: inline;
-	padding: 20px;
 
+.menu-nav-categoria ul li a:hover{
+	color: #fff;
 }
-
 
 
 /*filme-item*/
@@ -294,7 +295,7 @@ img {
 .introducao h1 {
 	margin: 15px;
 	font-weight:100;
-	text-align: left;
+	text-align: center;
 }
 
 .introducao p {

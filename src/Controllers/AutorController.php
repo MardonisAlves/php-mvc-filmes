@@ -30,7 +30,17 @@ class AutorController extends AbstractController
     $AutorModel = new AutorModel($this->db);
     $AutorModel->addAutor($autor);
 
-    
+
+    /* select o ultimo id da table Autor com um metodo *
+    $query = $sql = "SELECT MAX(id) as id FROM tabela";
+
+
+    // aqui vamos criar um novo filme
+    /*
+      id_autor
+      nome
+
+    */
     // chamar o metodo listar autor
     return $this->view->render("newautor/listautor.twig");
   }

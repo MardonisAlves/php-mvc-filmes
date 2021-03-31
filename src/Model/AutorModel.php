@@ -9,7 +9,7 @@ use PDO;
 class AutorModel extends AbstractModel
 {
 
-	//const CLASSNAME ='\CatalogoFilmes\Domain\Autor\Autor';
+	
 
 	public function __construct($db)
 	{

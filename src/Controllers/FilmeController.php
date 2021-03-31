@@ -13,11 +13,9 @@ class FilmeController extends AbstractController{
             'autores' => $autores
         ];
       
-        return $this->view->render("newfilme/new.twig" , $propreties);
 
-        
 
-    
+       return $this->view->render("newfilme/new.twig" , $propreties);
 
-    }
+     }
 }
