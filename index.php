@@ -19,7 +19,7 @@ require_once __DIR__.'/vendor/autoload.php';
 $config = new Config();
 $dbConfig = $config->get('db');
 $db = new PDO(
-	'mysql:host=localhost;dbname=Filmes',
+	'mysql:host=localhost;dbname=catalogofilmes',
 	$dbConfig['user'],
 	$dbConfig['password']);
 
